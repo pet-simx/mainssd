@@ -144,7 +144,7 @@ for i,v in ipairs(pets) do
 
 local args = {
     [1] = {
-        [pets[i]] = false
+        [pets[i]] = true
     }
 }
 
